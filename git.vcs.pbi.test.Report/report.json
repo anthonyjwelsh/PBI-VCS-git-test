@@ -1,0 +1,42 @@
+{
+  "config": "{\"version\":\"5.47\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU08\",\"version\":\"5.48\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY23SU08",
+            "path": "BaseThemes/CY23SU08.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"26dbeffd6a2f770ea40b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":14.389371486969853,\"y\":11.773122125702606,\"z\":0,\"width\":279.9386816555953,\"height\":279.9386816555953,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"waterfallChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Date_Ranges.Days\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Budget_Allocation.Month Number)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"Budget_Allocation\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"Date_Ranges\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Days\"},\"Name\":\"Date_Ranges.Days\",\"NativeReferenceName\":\"Days\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Month Number\"}},\"Function\":0},\"Name\":\"Sum(Budget_Allocation.Month Number)\",\"NativeReferenceName\":\"Sum of Month Number\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Month Number\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 279.94,
+          "width": 279.94,
+          "x": 14.39,
+          "y": 11.77,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
